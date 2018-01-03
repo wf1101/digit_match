@@ -31,9 +31,31 @@ describe "digit match" do
 
   # if the parameter is an object, check for nil
   describe "nil object input test" do
-    it "nil object is not an integer" do
-      is_palindrome(nil).must_equal false
+    describe "test 1" do
+      it "first input is nil" do
+        digit_match(nil, 4).must_equal 0
+      end
+    end
+
+    describe "test 2" do
+      it "second input is nil" do
+        digit_match(7, nil).must_equal 0
+      end
     end
   end
 
+  # check for edge cases
+  describe "edge cases" do
+    describe "edge case 1" do
+      it "first input is negative" do
+        digit_match(-44, 43).must_equal 0
+      end
+    end
+
+    describe "edge case 1" do
+      it "second input is negative" do
+        digit_match(77, -89).must_equal 0
+      end
+    end
+  end
 end
