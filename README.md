@@ -12,4 +12,7 @@ Number of matching digits starting with the least significant digit in two integ
 The method should return 4 in this case because 4 of these pairs match (2-2, 5-5, 8-8, and 1-1).
 * Share and explain the time and space complexities for your solution.
 * If you think of multiple approaches to solve the problem, implement the solution which minimizes space complexity. Explain the other approaches, and your decision in comments above the code.
+
 **Note**: Do not use Ruby provided functionality.
+
+**Aside reading**: The problem you solved in this exercise is auxiliary to the Hamming distance problem. The Hamming distance between two strings of equal length is the number of positions at which the corresponding symbols or characters are different. Read further on [Hamming distance problem](https://en.wikipedia.org/wiki/Hamming_distance).
